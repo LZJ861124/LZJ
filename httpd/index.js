@@ -40,7 +40,7 @@ http.createServer((request, response) => {
   request.on('end', () => {
     switch (request.url) {
       case '/':
-      serve(response, '../htdocs/index.html', 'text/html');
+      serve(response, '../htdocs/index2.html', 'text/html');
       break;
       case '/assets/css/styles.css':
       serve(response, '../htdocs/assets/css/styles.css', 'text/css');
