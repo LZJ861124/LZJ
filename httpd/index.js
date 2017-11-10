@@ -7,16 +7,16 @@ const routingTable = {
     url: '../htdocs/index.html',
     type: 'text/html'
   },
-
   '/assets/css/styles.css': {
-
     url: '../htdocs/assets/css/styles.css',
     type: 'text/css'
   },
-  '/assets/png/SokobanClone_byVellidragon.png',
-  type: 'image/png'
+  '/assets/png/SokobanClone_byVellidragon.png': {
+    url: '../htdocs/assets/png/SokobanClone_byVellidragon.png',
+    type: 'image/png'
   },
 };
+
 
 /**
 * 利⽤ http.ServerResponse 物件回傳檔案內容
