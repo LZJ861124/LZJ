@@ -230,7 +230,7 @@ window.addEventListener('load', () => {
     document.getElementById('cursor_y').textContent = e.clientY;
   });
 
-  drawGameBoard(ctxPaint, { level: levels.level_0 });
+  drawGameBoard(ctxPaint, { level: levels.level_2 });
 });
 
 // sokoban.js
