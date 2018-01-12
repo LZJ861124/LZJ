@@ -554,7 +554,7 @@ let sokoban = {
     this.move(e);
     this.paint();
 
-    if(box > boxOnGoal)
+    if(box < boxOnGoal)
       alert("GAME OVER");
 
   },
