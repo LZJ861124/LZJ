@@ -551,9 +551,11 @@ let sokoban = {
    * @returns {undefined}
    */
   update: function (e) {
-    this.move(box < boxOnGoal);
+    this.move(e);
     this.paint();
-    alert("GAME OVER");
+      if (isFinish) {
+        alert("GAME OVER");  
+      }
 
   },
 };
