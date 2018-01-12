@@ -224,6 +224,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
+      alert("GAME OVER");
     }
     else {
       this.putBox(cell);
@@ -553,9 +554,6 @@ let sokoban = {
   update: function (e) {
     this.move(e);
     this.paint();
-      if (isFinish) {
-        alert("GAME OVER");  
-      }
 
   },
 };
