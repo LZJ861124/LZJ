@@ -224,8 +224,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
-      for (var i = 0; i < array.length; i++) {
-        array[i]
+
       }
       alert("GAME OVER");
     }
@@ -556,6 +555,14 @@ let sokoban = {
    */
   update: function (e) {
     this.move(e);
+    if( G.now+1 > G.level.length-1 ) {
+        alert("闖關成功");
+        return ;
+      }
+      else{//如果可用的等級大于當前的等級，就把level設置進去;
+      if( G.now+1 > parseInt( $.cookie('level') || 0 )) {
+      $.cookie('level' , G.now+1 , { expires: 7 });
+      };
     this.paint();
 
   },
