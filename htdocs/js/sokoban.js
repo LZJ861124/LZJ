@@ -554,8 +554,8 @@ let sokoban = {
     this.move(e);
     this.paint();
 
-    if (game.checkWinCondition())
-			this.printOut("You won! Press '.'");
+    if(box > boxOnGoal)
+      alert("GAME OVER");
 
   },
 };
