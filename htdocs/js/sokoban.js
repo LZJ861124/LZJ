@@ -224,6 +224,9 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
+      for (var i = 0; i < array.length; i++) {
+        array[i]
+      }
       alert("GAME OVER");
     }
     else {
