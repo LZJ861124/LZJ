@@ -553,7 +553,9 @@ let sokoban = {
   update: function (e) {
     this.move(e);
     this.paint();
-    alert('GAME OVER');
+    if (game.checkWinCondition())
+			this.printOut("You won! Press '.'");
+      alert('GAME OVER');
   },
 };
 
