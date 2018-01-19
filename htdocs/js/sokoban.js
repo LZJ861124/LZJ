@@ -234,7 +234,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
-      alert("game over")
+      alert("我沒慧根")
     }
 
     else {
