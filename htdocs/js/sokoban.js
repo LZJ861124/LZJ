@@ -187,11 +187,6 @@ let prototypeGameState = {
       (this.level[y].charAt(x) == SOKOBAN.GROUND);
   },
 
-  isGoodGame: function ({x, y}) {
-    return (this.level[y].charAt(x) == SOKOBAN.GOODGAME) ||
-      (this.level[y].charAt(x) == SOKOBAN.GOODGAME_ON_GOAL);
-  },
-
   cellDown: function ({x, y}) {
     return {
       x: x,
@@ -229,7 +224,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
-
+      alert("老師讓我拿到三學分吧");
       }
     }
     else {
@@ -551,6 +546,7 @@ let sokoban = {
     MAN: 'man',
     MAN_ON_GOAL: 'man',
     WALL: 'wall',
+    GOODGAME:'goodgame',
   },
 
   /**
@@ -560,9 +556,6 @@ let sokoban = {
    */
   update: function (e) {
     this.move(e);
-    if(this goodgame){
-      alert("老師讓我拿到三學分吧");
-    }
     this.paint();
 
   },
