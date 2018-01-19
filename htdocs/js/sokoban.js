@@ -189,7 +189,6 @@ let prototypeGameState = {
 
   isGoodGame: function ({x, y}) {
     return (this.level[y].charAt(x) == SOKOBAN.GOODGAME) ||
-      (this.level[y].charAt(x) == SOKOBAN.BOX) ||
       (this.level[y].charAt(x) == SOKOBAN.BOX_ON_GOAL);
   },
 
