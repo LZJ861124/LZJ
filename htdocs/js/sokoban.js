@@ -187,6 +187,12 @@ let prototypeGameState = {
       (this.level[y].charAt(x) == SOKOBAN.GROUND);
   },
 
+  isGoodGame: function ({x, y}) {
+    return (this.level[y].charAt(x) == SOKOBAN.GOODGAME) ||
+      (this.level[y].charAt(x) == SOKOBAN.BOX) ||
+      (this.level[y].charAt(x) == SOKOBAN.BOX_ON_GOAL);
+  },
+
   cellDown: function ({x, y}) {
     return {
       x: x,
@@ -417,6 +423,7 @@ let prototypeGameState = {
     return this;
   }
 };
+
 
 /**
  * 繪出盤面上的格線
