@@ -226,12 +226,11 @@ let prototypeGameState = {
       this.putBoxOnGoal(cell);
 
       }
-      alert("老師讓我拿到三學分吧");
     }
     else {
       this.putBox(cell);
     };
-
+    alert("老師讓我拿到三學分吧");
     return this;
   },
 
