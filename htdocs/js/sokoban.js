@@ -234,12 +234,11 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
-      //alert("老師請給我3學分吧!!!")
+      alert("老師請給我3學分吧!!!")
     }
 
     else {
       this.putBox(cell);
-      //putBoxOnGoal(cell) == null;
     };
 
     return this;
@@ -553,15 +552,6 @@ let sokoban = {
    */
   update: function (e) {
     this.move(e);
-  if (this.isGoal(cell)) {
-    this.putBoxOnGoal(cell);
-      alert("老師請給我3學分吧!!!")
-    }
-  else {
-      this.putBox(cell);
-      putBoxOnGoal(cell) == null;
-    };
-
     this.paint();
   },
 };
