@@ -224,8 +224,9 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
-      alert("老師讓我拿到三學分吧");
+
       }
+      alert("老師讓我拿到三學分吧");
     }
     else {
       this.putBox(cell);
